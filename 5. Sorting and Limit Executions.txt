@@ -1,0 +1,18 @@
+5. Sorting and Limit Executions (10 marks)
+select mag,place, type from public.earthquakes_table order by mag desc limit 10;
+
+
+Output:
+"mag"	"place"	"type"
+7.1	"Kermadec Islands, New Zealand"	"earthquake"
+7.1	"170 km SSE of Teluk Dalam, Indonesia"	"earthquake"
+7	"96 km N of Tuban, Indonesia"	"earthquake"
+7	"39 km ESE of Ambunti, Papua New Guinea"	"earthquake"
+6.7	"south of the Fiji Islands"	"earthquake"
+6.6	"south of the Fiji Islands"	"earthquake"
+6.5	"near the east coast of the Kamchatka Peninsula, Russia"	"earthquake"
+6.3	"23 km NNE of Kandrian, Papua New Guinea"	"earthquake"
+6.3	"71 km S of Boca Chica, Panama"	"earthquake"
+6.3	"105 km WSW of Constitución, Chile"	"earthquake"
+
+

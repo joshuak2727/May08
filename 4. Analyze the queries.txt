@@ -1,0 +1,13 @@
+4. Analyze the queries (10 marks)
+BEGIN;
+    EXPLAIN ANALYZE 
+	select * from public.earthquakes_table ;
+	
+	
+Output:
+
+"QUERY PLAN"
+"Seq Scan on earthquakes_table  (cost=0.00..433.60 rows=12260 width=174) (actual time=0.005..3.137 rows=12260 loops=1)"
+"Planning Time: 0.230 ms"
+"Execution Time: 4.615 ms"
+

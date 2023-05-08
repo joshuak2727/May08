@@ -1,0 +1,16 @@
+1. Retrieve Locations of specific features (10 marks)
+
+select type, place from public.earthquakes_table 
+where type not in ('earthquake','explosion','quarry blast','ice quake');
+
+
+
+Output:
+
+"type"	"place"
+"other event"	"1 km NE of Nenana, Alaska"
+"other event"	"15 km NNW of Port Clarence, Alaska"
+"chemical explosion"	"12km SSW of Tres Pinos, CA"
+"other event"	"1 km ENE of Nenana, Alaska"
+"other event"	"79 km E of McCarthy, Alaska"
+"other event"	"Southern Yukon Territory, Canada"

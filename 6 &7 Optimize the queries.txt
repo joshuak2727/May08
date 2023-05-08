@@ -1,0 +1,21 @@
+6. Optimize the queries to speed up execution time (10 marks)
+7. N-Optimization of queries (5 marks)
+
+BEGIN;
+EXPLAIN ANALYZE 
+select mag,place, type from public.earthquakes_table where id like 'a%' order by mag desc;
+
+ALTER TABLE public.earthquakes_table drop constraint earthquakes_table_pkey;
+BEGIN;
+EXPLAIN ANALYZE 
+select mag,place, type from public.earthquakes_table where id like 'a%' order by mag desc;
+
+ALTER TABLE public.earthquakes_table add constraint earthquakes_table_pkey PRIMARY KEY(id);
+
+commit;
+
+
+Output:
+
+Refer to screenshot attached. 
+
